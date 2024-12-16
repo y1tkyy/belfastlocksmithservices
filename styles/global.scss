@@ -30,6 +30,10 @@ main,
 
 .header {
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
   &__contact {
     display: flex;
     align-items: center;

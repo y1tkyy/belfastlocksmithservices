@@ -383,6 +383,7 @@ main,
   display: flex;
   padding: 0 30px;
   margin-bottom: 120px;
+  scroll-margin-top: 200px;
 }
 .about__main {
   flex: 7;
@@ -455,6 +456,7 @@ main,
   display: flex;
   padding: 0 30px;
   margin-bottom: 120px;
+  scroll-margin-top: 200px;
 }
 .services__main {
   flex: 7;
@@ -502,6 +504,7 @@ main,
 
 .products {
   margin-bottom: 120px;
+  scroll-margin-top: 200px;
 }
 .products__wrapper {
   padding: 0 60px;
@@ -622,7 +625,7 @@ main,
 }
 .contact__title-image {
   display: block;
-  width: 18px;
+  width: 34px;
   height: auto;
 }
 .contact__title-text {

@@ -294,6 +294,7 @@ main,
   display: flex;
   padding: 0 30px;
   margin-bottom: 120px;
+  scroll-margin-top: 200px;
 
   &__main {
     flex: 7;
@@ -377,6 +378,7 @@ main,
   display: flex;
   padding: 0 30px;
   margin-bottom: 120px;
+  scroll-margin-top: 200px;
 
   &__main {
     flex: 7;
@@ -435,6 +437,7 @@ main,
 
 .products {
   margin-bottom: 120px;
+  scroll-margin-top: 200px;
   &__wrapper {
     padding: 0 60px;
   }
@@ -567,7 +570,7 @@ main,
 
     &-image {
       display: block;
-      width: 18px;
+      width: 34px;
       height: auto;
     }
 

@@ -608,6 +608,7 @@ main,
 
 .article {
   padding: 0 30px;
+  margin-top: 50px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -627,6 +628,6 @@ main,
     font-size: 1.5rem;
     text-transform: uppercase;
     color: $primary-light;
-    margin: 17px 0;
+    margin-bottom: 18px;
   }
 }

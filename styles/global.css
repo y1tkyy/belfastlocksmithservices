@@ -663,6 +663,7 @@ main,
 
 .article {
   padding: 0 30px;
+  margin-top: 50px;
 }
 .article__container {
   display: flex;
@@ -680,5 +681,5 @@ main,
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #4e8154;
-  margin: 17px 0;
+  margin-bottom: 18px;
 }/*# sourceMappingURL=global.css.map */

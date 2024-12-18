@@ -165,11 +165,6 @@ main,
   font-size: 1.75rem;
   color: rgb(72, 72, 72);
 }
-.header__logo-container {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
 .header__logo-image {
   height: 72px;
 }
@@ -185,7 +180,7 @@ main,
 }
 .header__nav-list {
   display: flex;
-  gap: 12px;
+  gap: 18px;
 }
 .header__wrapper {
   display: flex;
@@ -199,6 +194,9 @@ main,
   background-color: rgb(105, 164, 112);
 }
 
+.hero {
+  margin-bottom: 50px;
+}
 .hero__wrapper {
   width: 100%;
   margin-bottom: 16px;
@@ -221,8 +219,11 @@ main,
 }
 .hero__card-button {
   display: flex;
-  padding: 13px;
-  margin-right: 12px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 11px;
   border: 1px solid #e6e6e6;
   background-color: #fff;
   cursor: pointer;
@@ -231,9 +232,14 @@ main,
   width: 20px;
 }
 .hero__card-container {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 16px 0 50px 0;
+  flex-direction: column;
+}
+.hero__card-description {
+  display: flex;
+  align-items: end;
+  height: 100%;
 }
 .hero__card-image {
   width: 100%;
@@ -302,13 +308,13 @@ main,
 .content__sidebar {
   flex: 1;
 }
-.content__sidebar-features, .content__sidebar-services, .content__sidebar-pricing {
+.content__sidebar-features, .content__sidebar-services {
   background-color: #fdfdfd;
 }
-.content__sidebar-pricing {
+.content__sidebar-features {
   position: relative;
 }
-.content__sidebar-pricing::after {
+.content__sidebar-features::after {
   content: "";
   display: block;
   width: 100%;

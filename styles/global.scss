@@ -193,6 +193,9 @@ main,
 
   &__text {
     margin-bottom: 16px;
+    a {
+      color: $primary-light;
+    }
   }
 
   &__title {

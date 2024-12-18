@@ -300,6 +300,9 @@ main,
 .content__text {
   margin-bottom: 16px;
 }
+.content__text a {
+  color: #4e8154;
+}
 .content__title {
   font-size: 2rem;
   font-weight: bold;

@@ -130,6 +130,10 @@ table {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   color: #5c5c5c;
   line-height: normal;
@@ -141,6 +145,7 @@ main,
 .footer__wrapper {
   margin: auto;
   max-width: 1200px;
+  flex: 1;
 }
 
 .hidden {
@@ -377,7 +382,7 @@ main,
 
 .brands {
   display: flex;
-  margin-bottom: 120px;
+  margin-bottom: 85px;
 }
 .brands__image {
   height: 50px;
@@ -654,4 +659,26 @@ main,
   width: 100%;
   height: 8px;
   background-color: rgb(105, 164, 112);
+}
+
+.article {
+  padding: 0 30px;
+}
+.article__container {
+  display: flex;
+  justify-content: space-between;
+}
+.article__image {
+  width: 280px;
+  margin-right: 90px;
+  height: auto;
+}
+.article__text {
+  font-size: 21px;
+}
+.article__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #4e8154;
+  margin: 17px 0;
 }/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__decorative-line"></div>
+      <div class="header__wrapper">
+        <a href="../index.html" class="header__logo-link">
+          <img
+            src="../images/logo/logo.png"
+            alt="Belfast Locksmith logo"
+            class="header__logo-image"
+          />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="../index.html#top" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="../index.html#about-section" class="header__nav-link"
+                >About</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="../index.html#services-section" class="header__nav-link"
+                >Services</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="../index.html#products-section" class="header__nav-link"
+                >Products</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="../index.html#contact-section" class="header__nav-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contact">
+          <img
+            src="../images/icons/telephone.jpg"
+            alt="Telephone icon"
+            class="header__contact-icon"
+          />
+          <h2 class="header__contact-telephone">029 22 71 47 74</h2>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="article">
+        <h2 class="article__title">Lock Change/Repair/Installation</h2>
+        <div class="article__container">
+          <img
+            src="../images/lock-installation.jpg"
+            alt="Lock Change/Repair/Installation"
+            class="article__image"
+          />
+          <div class="article__description">
+            <p class="article__text">
+              Whether you&apos;ve moved into a new property, had a break-in, or
+              just need a lock upgrade, we&apos;re here to help. We supply and
+              install high-quality locks that meet modern security standards.
+              From simple repairs to full replacements, we ensure your locks are
+              working perfectly."Professional lock changes, repairs, and
+              installations.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__decorative-line"></div>
+      <div class="footer__wrapper">
+        <p class="footer__text">
+          www.belfastlocksmithservices.co.uk
+          <span id="current-year"></span> &copy; All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // This script dynamically sets the current year
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

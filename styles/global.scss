@@ -157,6 +157,14 @@ main,
   margin-bottom: 85px;
   scroll-margin-top: 180px;
 
+  a {
+    color: $primary-light;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
   &__main {
     flex: 3;
     padding-right: 50px;
@@ -177,12 +185,13 @@ main,
   }
 
   &__list-item {
-    strong {
-      font-weight: bold;
-    }
-
     ul {
       list-style: disc;
+    }
+
+    &--circle {
+      margin-left: 40px;
+      list-style-type: circle;
     }
   }
 
@@ -200,9 +209,6 @@ main,
 
   &__text {
     margin-bottom: 16px;
-    a {
-      color: $primary-light;
-    }
   }
 
   &__title {
@@ -219,7 +225,7 @@ main,
       background-color: $bg-aside;
     }
 
-    &-features {
+    &-services {
       position: relative;
       &::after {
         content: "";
@@ -258,8 +264,7 @@ main,
     }
 
     &-list {
-      padding: 14px 22px 10px 22px;
-      margin: 16px 0;
+      padding: 30px 22px 26px 22px;
       line-height: 28px;
 
       &-item {
@@ -396,10 +401,31 @@ main,
 }
 
 .footer {
+  width: 100%;
   &__text {
-    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 2px;
+      background-color: $border-color;
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      z-index: -1;
+      pointer-events: none;
+    }
   }
   &__wrapper {
+    display: flex;
+    justify-content: center;
     padding: 95px 0 30px;
   }
   &__decorative-line {

@@ -168,7 +168,7 @@ main,
 }
 .header__contact-telephone {
   font-size: 1.75rem;
-  color: rgb(72, 72, 72);
+  color: #47754c;
 }
 .header__logo-image {
   height: 72px;
@@ -258,7 +258,7 @@ main,
   color: #4e8154;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .hero__card-text {
   text-transform: uppercase;
@@ -277,6 +277,11 @@ main,
 }
 .content a {
   color: #4e8154;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  display: inline;
+  max-width: 100%;
 }
 .content strong {
   font-weight: bold;
@@ -343,7 +348,7 @@ main,
   color: #fff;
   padding: 14px 22px 10px 22px;
   text-transform: uppercase;
-  font-size: 19px;
+  font-size: 1.25rem;
   position: relative;
 }
 .content__sidebar-heading--reverse {
@@ -421,6 +426,7 @@ main,
   border: 1px solid #e6e6e6;
   color: #5c5c5c;
   margin-top: 18px;
+  font-size: 1rem;
   cursor: pointer;
   background-image: linear-gradient(to bottom, #f8f8f8, #e2e2e2);
 }
@@ -430,6 +436,7 @@ main,
 }
 .contact__form-input {
   padding: 5px;
+  font-size: 1rem;
   border: 1px solid #e6e6e6;
   height: 38px;
   width: 100%;
@@ -439,10 +446,11 @@ main,
 }
 .contact__form-textarea {
   width: 100%;
+  padding: 5px 0 0 5px;
   border: 1px solid #e6e6e6;
   resize: none;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .contact__info {
   max-width: 410px;
@@ -453,6 +461,9 @@ main,
 }
 .contact__info-email {
   color: #4e8154;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  display: block;
 }
 .contact__info-label {
   margin-top: 18px;
@@ -496,6 +507,7 @@ main,
   color: #5c5c5c;
   margin-left: 20px;
   position: relative;
+  text-decoration: underline;
   z-index: 1;
 }
 .footer__link::after {
@@ -535,11 +547,155 @@ main,
   height: auto;
 }
 .article__text {
-  font-size: 21px;
+  font-size: 1.25rem;
 }
 .article__title {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #4e8154;
   margin-bottom: 18px;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    position: relative;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .content {
+    scroll-margin-top: 0px;
+    padding: 0 10px;
+  }
+  .content__subheading {
+    scroll-margin-top: 0px;
+  }
+  .brands__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .content__main {
+    padding: 0;
+  }
+  .content__sidebar {
+    display: none;
+  }
+  .contact__wrapper {
+    flex-direction: column-reverse;
+  }
+  .contact__info {
+    max-width: 100%;
+  }
+  .contact__form {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 21px;
+  }
+  .header__nav-link {
+    font-size: 1.5rem;
+  }
+  .hero__image {
+    display: none;
+  }
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+  }
+  .hero__card-image {
+    height: 300px;
+  }
+  .hero__card-description {
+    justify-content: space-between;
+  }
+  .hero__card-button {
+    padding: 15px;
+  }
+  .hero__card-button img {
+    width: 25px;
+  }
+  .content {
+    padding: 0;
+  }
+  .content__main {
+    padding: 0 30px;
+  }
+  .content__sidebar {
+    display: none;
+  }
+  .article__title {
+    text-align: center;
+  }
+  .article__container {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .article__image {
+    margin: 0 auto;
+    width: auto;
+    max-height: 300px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  .footer__link {
+    margin-left: 0;
+  }
+  .footer__link::after {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .header__nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .brands {
+    padding: 0 30px;
+  }
+  .brands__wrapper {
+    gap: 20px;
+  }
+  .contact {
+    margin-bottom: 60px;
+  }
+  .contact__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 16px 10px;
+  }
+  .contact__form-label {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .contact__info-email {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    width: 100%;
+  }
+  .contact__form-field {
+    flex-direction: column;
+  }
+  .footer {
+    text-align: center;
+  }
 }/*# sourceMappingURL=global.css.map */

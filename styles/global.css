@@ -326,7 +326,7 @@ main,
 .content__why-choose {
   display: flex;
   width: 100%;
-  margin-bottom: 40px;
+  margin: 40px 0 40px 0;
 }
 .content__our-services {
   scroll-margin-top: 150px;

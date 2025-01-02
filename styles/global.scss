@@ -91,6 +91,7 @@ main,
   &__wrapper {
     width: 100%;
     margin-bottom: 16px;
+    position: relative;
   }
   &__container {
     display: grid;
@@ -101,7 +102,25 @@ main,
   }
   &__image {
     width: 100%;
+    height: 285px;
     object-fit: cover;
+  }
+  &__banner {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    padding: 16px 32px;
+    max-width: 475px;
+    background-color: $primary-light;
+    &-text {
+      color: white;
+      font-weight: 500;
+      font-size: 1.375rem;
+      line-height: 1.625rem;
+    }
   }
   &__card {
     display: flex;
@@ -181,8 +200,7 @@ main,
   &__list {
     list-style: disc;
     padding-left: 40px;
-    margin: 16px 0;
-
+    margin-bottom: 8px;
     &--numbered {
       list-style: decimal;
     }
@@ -194,13 +212,14 @@ main,
     }
 
     &--circle {
-      margin-left: 40px;
+      margin: 4px 0 6px 40px;
       list-style-type: circle;
     }
   }
 
   &__subheading {
     scroll-margin-top: 150px;
+    line-height: 36px;
     font-weight: bold;
   }
 
@@ -212,7 +231,7 @@ main,
   }
 
   &__text {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   &__title {
@@ -244,6 +263,12 @@ main,
 
   &__sidebar {
     flex: 1;
+
+    &-image {
+      margin-top: 30px;
+      width: 100%;
+      height: auto;
+    }
 
     &-features,
     &-services {
@@ -297,6 +322,7 @@ main,
         list-style: disc;
         &--bold {
           font-weight: bold;
+          line-height: 32px;
         }
 
         &--underline {
@@ -695,6 +721,26 @@ main,
   .why-choose__wrapper {
     max-width: 70%;
   }
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 20px;
+    }
+    &__link {
+      margin-left: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -708,6 +754,9 @@ main,
   }
   .hero {
     &__image {
+      display: none;
+    }
+    &__banner {
       display: none;
     }
     &__container {
@@ -779,26 +828,6 @@ main,
       max-height: 300px;
     }
   }
-  .footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    &__wrapper {
-      flex-direction: column;
-    }
-    &__container {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      gap: 20px;
-    }
-    &__link {
-      margin-left: 0;
-      &::after {
-        display: none;
-      }
-    }
-  }
 }
 
 @media (max-width: 640px) {
@@ -841,5 +870,8 @@ main,
   }
   .footer {
     text-align: center;
+  }
+  .footer__container {
+    flex-direction: column;
   }
 }

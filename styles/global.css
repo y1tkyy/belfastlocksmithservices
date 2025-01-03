@@ -164,7 +164,7 @@ main,
   align-items: center;
 }
 .header__contact-icon {
-  height: 104px;
+  height: 96px;
 }
 .header__contact-telephone {
   font-size: 1.75rem;
@@ -674,7 +674,7 @@ main,
 }
 .contact__title-image {
   display: block;
-  width: 34px;
+  width: 48px;
   height: auto;
 }
 .contact__title-text {

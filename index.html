@@ -32,6 +32,32 @@
   <body>
     <header class="header">
       <div class="header__decorative-line"></div>
+      <div class="header__overlay">
+        <div class="header__menu">
+          <button class="header__menu-close">
+            <img src="./images/icons/burger_close.svg" alt="Close menu" />
+          </button>
+          <nav class="header__nav header__nav--menu">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#top" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#content-section" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#our-services" class="header__nav-link">Services</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#our-products" class="header__nav-link">Products</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#contact-section" class="header__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="header__wrapper">
         <a href="./index.html" class="header__logo-link">
           <img
@@ -59,13 +85,20 @@
             </li>
           </ul>
         </nav>
-        <div class="header__contact">
+        <div class="header__contact hidden">
           <img
             src="./images/icons/telephone.svg"
             alt="Telephone icon"
             class="header__contact-icon"
           />
           <h2 class="header__contact-telephone">028 912 44 111</h2>
+        </div>
+        <div class="header__burger">
+          <img
+            src="./images/icons/burger.svg"
+            alt="Burger menu"
+            class="header__burger-icon"
+          />
         </div>
       </div>
     </header>
@@ -78,12 +111,28 @@
             alt="Professional locksmith service"
             class="hero__image"
           />
+          <img
+            src="./images/hero-mobile.png"
+            alt="Locksmith service"
+            class="hero__image hero__image--mobile"
+          />
           <div class="hero__banner">
             <p class="hero__banner-text">
               Welcome to Belfast Locksmith Services Your Local Locksmith with
               Honest Pricing
             </p>
           </div>
+          <button class="hero__button">
+            <div class="hero__button-wrapper">
+              <img
+                class="hero__button-icon"
+                src="./images/icons/hero_button.svg"
+                alt="Call Now Button"
+              />
+              <p class="hero__button-text">Call Now</p>
+            </div>
+            <p class="hero__button-telephone">028 912 44 111</p>
+          </button>
         </div>
         <div class="hero__container">
           <div class="hero__card">
@@ -197,6 +246,510 @@
                 >
                   <img src="./images/icons/button.svg" alt="Button icon" />
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mobile">
+        <div class="mobile__main">
+          <h2 class="mobile__title">Local. Trusted. Affordable</h2>
+          <p class="mobile__subtitle">
+            At Belfast Locksmith Services, we&apos;re a trusted local business
+            offering personal, reliable, and affordable locksmith solutions with
+            no hidden fees or VAT
+          </p>
+          <div class="mobile__sidebar-features">
+            <h2 class="mobile__sidebar-heading">How Are We Different?</h2>
+            <ul class="mobile__sidebar-list">
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                15 Minutes Arrival
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                24/7 Emergency Service
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                No Hidden Charges
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                No Vat
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                12-Month Full Warranty
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                British Standard Locks
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                100% Local Business
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                No Call-Out Fees
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                Trusted And Vetted
+              </li>
+              <li
+                class="mobile__sidebar-list-item mobile__sidebar-list-item--bold"
+              >
+                Free Estimates & Quotes
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__image-wrapper">
+            <img
+              class="mobile__image"
+              src="./images/locksmith_guy.png"
+              alt="Locksmith guy"
+            />
+          </div>
+          <div class="mobile-why-choose__wrapper">
+            <h2 class="mobile-why-choose__title">
+              Why Choose Belfast Locksmith Services?
+            </h2>
+            <div class="mobile-why-choose__container">
+              <div class="mobile-why-choose__card">
+                <div class="mobile-why-choose__card-container">
+                  <div class="mobile-why-choose__card-header">
+                    <img
+                      class="mobile-why-choose__card-icon"
+                      src="./images/icons/local_expertise.svg"
+                      alt="Local Expertise"
+                    />
+                    <h2 class="mobile-why-choose__card-title">
+                      Local Expertise
+                    </h2>
+                  </div>
+                  <p class="mobile-why-choose__card-description">
+                    Your trusted Belfast-based locksmith
+                  </p>
+                </div>
+              </div>
+              <div class="mobile-why-choose__card">
+                <div class="mobile-why-choose__card-container">
+                  <div class="mobile-why-choose__card-header">
+                    <img
+                      class="mobile-why-choose__card-icon"
+                      src="./images/icons/honest_pricing.svg"
+                      alt="Honest Pricing"
+                    />
+                    <h2 class="mobile-why-choose__card-title">
+                      Honest Pricing
+                    </h2>
+                  </div>
+                  <p class="mobile-why-choose__card-description">
+                    Clear, affordable rates with no VAT
+                  </p>
+                </div>
+              </div>
+              <div class="mobile-why-choose__card">
+                <div class="mobile-why-choose__card-container">
+                  <div class="mobile-why-choose__card-header">
+                    <img
+                      class="mobile-why-choose__card-icon"
+                      src="./images/icons/fast_friendly.svg"
+                      alt="Fast & Friendly Service"
+                    />
+                    <h2 class="mobile-why-choose__card-title">
+                      Fast & Friendly Service
+                    </h2>
+                  </div>
+                  <p class="mobile-why-choose__card-description">
+                    24/7 quick, skilled service
+                  </p>
+                </div>
+              </div>
+              <div class="mobile-why-choose__card">
+                <div class="mobile-why-choose__card-container">
+                  <div class="mobile-why-choose__card-header">
+                    <img
+                      class="mobile-why-choose__card-icon"
+                      src="./images/icons/topquality_workmanship.svg"
+                      alt="Top-Quality Workmanship"
+                    />
+                    <h2 class="mobile-why-choose__card-title">
+                      Top-Quality Workmanship
+                    </h2>
+                  </div>
+                  <p class="mobile-why-choose__card-description">
+                    Reliable work for lasting security
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile__our-services" id="mobile-our-services">
+            <h2 class="mobile__title">Our Services</h2>
+            <ul class="mobile__list">
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/emergency_lockout.svg"
+                    alt="Emergency Lockout Assistance"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">
+                    Emergency Lockout Assistance
+                  </h3>
+                  <p class="mobile__service-description">
+                    Locked out of your home, office, or vehicle? We'll get you
+                    back in quickly and safely—day or night.
+                  </p>
+                </div>
+              </li>
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/lock_replacement.svg"
+                    alt="Lock Replacement & Installation"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">
+                    Lock Replacement & Installation
+                  </h3>
+                  <p class="mobile__service-description">
+                    Need a lock changed or a new one installed? We supply and
+                    fit high-quality locks that meet all security standards.
+                  </p>
+                </div>
+              </li>
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/upvc_door.svg"
+                    alt="UPVC Door & Window Repairs"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">
+                    UPVC Door & Window Repairs
+                  </h3>
+                  <p class="mobile__service-description">
+                    We specialise in fixing and securing UPVC doors and windows,
+                    ensuring they function perfectly.
+                  </p>
+                </div>
+              </li>
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/security_enhancements.svg"
+                    alt="Security Enhancements"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">Security Enhancements</h3>
+                  <p class="mobile__service-description">
+                    From upgrading locks to reinforcing doors and windows, we
+                    help you stay one step ahead of potential threats.
+                  </p>
+                </div>
+              </li>
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/burglary_repairs.svg"
+                    alt="Burglary Repairs"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">Burglary Repairs</h3>
+                  <p class="mobile__service-description">
+                    If the worst happens, we provide rapid, reliable repairs to
+                    restore your peace of mind.
+                  </p>
+                </div>
+              </li>
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/free_security.svg"
+                    alt="Free Security Assessments"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">
+                    Free Security Assessments
+                  </h3>
+                  <p class="mobile__service-description">
+                    Concerned about your property's safety? We offer free
+                    assessments to identify vulnerabilities and recommend
+                    tailored solutions.
+                  </p>
+                </div>
+              </li>
+              <li class="mobile__list-item">
+                <div class="mobile__icon-wrapper">
+                  <img
+                    src="./images/icons/lock_maintenance.svg"
+                    alt="Lock Maintenance & Servicing"
+                    class="mobile__icon"
+                  />
+                </div>
+                <div class="mobile__container">
+                  <h3 class="mobile__service-title">
+                    Lock Maintenance & Servicing
+                  </h3>
+                  <p class="mobile__service-description">
+                    Ensure your locks remain in top condition with our regular
+                    maintenance and repair services, helping to prevent
+                    unexpected issues.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__image-wrapper">
+            <img
+              src="./images/sidebar_image.jpeg"
+              alt="Locksmith guy fixing lock"
+              class="mobile__sidebar-image"
+            />
+          </div>
+          <h2 class="mobile__title">Our Products</h2>
+          <p class="mobile__subtitle">
+            We provide top-quality security products to protect your home or
+            business. From advanced locks to essential accessories, all meet the
+            highest industry standards.
+          </p>
+          <p class="mobile__subtitle">
+            Quality You Can Trust: Tested for durability. Expert Installation:
+            Fitted by skilled locksmiths. Custom Solutions: Products tailored to
+            your needs.
+          </p>
+          <div class="mobile__makes-us">
+            <h2 class="mobile-makes-us__title">Choose With Confidence</h2>
+            <ul class="mobile-makes-us__list">
+              <li class="mobile-makes-us__list-item">
+                <div class="mobile-makes-us__icon-wrapper">
+                  <img
+                    src="./images/icons/no_vat.svg"
+                    alt="No VAT"
+                    class="mobile-makes-us__icon"
+                  />
+                </div>
+                <h3 class="mobile-makes-us__subheading">No VAT</h3>
+                <p class="mobile-makes-us__description">
+                  Save on costs with our straightforward pricing policy.
+                </p>
+              </li>
+              <li class="mobile-makes-us__list-item">
+                <div class="mobile-makes-us__icon-wrapper">
+                  <img
+                    src="./images/icons/local_trusted.svg"
+                    alt="Local & Trusted"
+                    class="mobile-makes-us__icon"
+                  />
+                </div>
+                <h3 class="mobile-makes-us__subheading">Local & Trusted</h3>
+                <p class="mobile-makes-us__description">
+                  We are your neighbours, not a faceless corporation.
+                </p>
+              </li>
+              <li class="mobile-makes-us__list-item">
+                <div class="mobile-makes-us__icon-wrapper">
+                  <img
+                    src="./images/icons/no_hidden.svg"
+                    alt="No Hidden Fees"
+                    class="mobile-makes-us__icon"
+                  />
+                </div>
+                <h3 class="mobile-makes-us__subheading">No Hidden Fees</h3>
+                <p class="mobile-makes-us__description">
+                  Transparency is our promise—what we quote is what you pay.
+                </p>
+              </li>
+              <li class="mobile-makes-us__list-item">
+                <div class="mobile-makes-us__icon-wrapper">
+                  <img
+                    src="./images/icons/customer-centric.svg"
+                    alt="Customer-Centric"
+                    class="mobile-makes-us__icon"
+                  />
+                </div>
+                <h3 class="mobile-makes-us__subheading">Customer-Centric</h3>
+                <p class="mobile-makes-us__description">
+                  Your satisfaction is our top priority.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <h2 class="mobile__title">Areas We Serve</h2>
+          <p class="mobile__subtitle">
+            We proudly serve Belfast and its surrounding areas, including
+            Malone, Stranmillis, Dundonald, Castlereagh, Carrickfergus, as well
+            as Lisburn, Bangor, and beyond.
+          </p>
+          <div class="mobile__sidebar-services">
+            <h2
+              class="mobile__sidebar-heading mobile__sidebar-heading--reverse"
+            >
+              More Services
+            </h2>
+            <ul class="mobile__sidebar-list">
+              <li class="mobile__sidebar-list-item--underline">
+                High-Security Locking Systems
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Digital Lock Installation
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Smart Lock Setup
+              </li>
+              <li class="mobile__sidebar-list-item--underline">Gate Locks</li>
+              <li class="mobile__sidebar-list-item--underline">
+                Panic Bar Installation
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Lock Picking and Opening
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Window Lock Installation
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Cylinder Lock Replacement
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Restricted Key Systems
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Lock Box Installation
+              </li>
+              <li class="mobile__sidebar-list-item--underline">
+                Garage Door Lock Repairs
+              </li>
+            </ul>
+          </div>
+          <p class="mobile__subtitle">
+            At Belfast Locksmith Services, we're more than a business—we're part
+            of your community. Let us help keep your home, business, and loved
+            ones secure with honest, dependable service.
+          </p>
+          <h2 class="mobile__title">Contact Us Today</h2>
+          <p class="mobile__subtitle">
+            We're ready to help with all your locksmith needs. Call us now for
+            fast, affordable service you can trust.
+          </p>
+          <p class="mobile__text">
+            <a href="tel:028 912 44 111">028 912 44 111</a>
+          </p>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="hero__container hero__container--mobile">
+          <div class="hero__card">
+            <a href="./pages/emergency-locksmith.html" class="hero__card-link">
+              <img
+                src="./images/emergency-locksmith.jpg"
+                alt="Emergency 24/7 Locksmith"
+                class="hero__card-image"
+              />
+            </a>
+            <div class="hero__card-container">
+              <a
+                href="./pages/emergency-locksmith.html"
+                class="hero__card-link"
+              >
+                <h3 class="hero__card-subtitle">Emergency 24/7 Locksmith</h3>
+              </a>
+              <div class="hero__card-description">
+                <a
+                  href="./pages/emergency-locksmith.html"
+                  class="hero__card-link"
+                >
+                  <p class="hero__card-text">
+                    Fast response for any lockout emergencies
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card">
+            <a href="./pages/lock-change.html" class="hero__card-link">
+              <img
+                src="./images/lock-installation.jpg"
+                alt="Lock Change/Repair/Installation"
+                class="hero__card-image"
+              />
+            </a>
+            <div class="hero__card-container">
+              <a href="./pages/lock-change.html" class="hero__card-link">
+                <h3 class="hero__card-subtitle">Lock Change and Repair</h3>
+              </a>
+              <div class="hero__card-description">
+                <a href="./pages/lock-change.html" class="hero__card-link">
+                  <p class="hero__card-text">
+                    Professional lock changes, repairs, and installations
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card">
+            <a href="./pages/upvc.html" class="hero__card-link">
+              <img
+                src="./images/upvc-locksmith.jpg"
+                alt="Lock change, installation"
+                class="hero__card-image"
+              />
+            </a>
+            <div class="hero__card-container">
+              <a href="./pages/upvc.html" class="hero__card-link">
+                <h3 class="hero__card-subtitle">UPVC Door Specialists</h3>
+              </a>
+              <div class="hero__card-description">
+                <a href="./pages/upvc.html" class="hero__card-link">
+                  <p class="hero__card-text">
+                    Expert repairs for UPVC doors and windows
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card">
+            <a href="./pages/security-upgrade.html" class="hero__card-link">
+              <img
+                src="./images/security-upgrade.jpg"
+                alt="Tailored solutions to enhance your property's security"
+                class="hero__card-image"
+              />
+            </a>
+            <div class="hero__card-container">
+              <a href="./pages/security-upgrade.html" class="hero__card-link">
+                <h3 class="hero__card-subtitle">Security Upgrade</h3>
+              </a>
+              <div class="hero__card-description">
+                <a href="./pages/security-upgrade.html" class="hero__card-link">
+                  <p class="hero__card-text">
+                    Tailored solutions to enhance your property&apos;s security
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -805,7 +1358,6 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__decorative-line"></div>
       <div class="footer__wrapper">
         <p class="footer__text">
           www.belfastlocksmithservices.co.uk
@@ -832,6 +1384,30 @@
     </footer>
 
     <script>
+      // Menu
+      document.addEventListener("DOMContentLoaded", () => {
+        const burgerIcon = document.querySelector(".header__burger");
+        const menu = document.querySelector(".header__menu");
+        const overlay = document.querySelector(".header__overlay");
+        const closeButton = document.querySelector(".header__menu-close");
+
+        const openMenu = () => {
+          menu.classList.add("active");
+          overlay.classList.add("active");
+          document.body.classList.add("blur");
+        };
+
+        const closeMenu = () => {
+          menu.classList.remove("active");
+          overlay.classList.remove("active");
+          document.body.classList.remove("blur");
+        };
+
+        burgerIcon.addEventListener("click", openMenu);
+        overlay.addEventListener("click", closeMenu);
+        closeButton.addEventListener("click", closeMenu);
+      });
+
       // This script dynamically sets the current year
       document.getElementById("current-year").textContent =
         new Date().getFullYear();

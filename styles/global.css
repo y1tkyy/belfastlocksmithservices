@@ -139,6 +139,9 @@ body {
   line-height: normal;
   overflow-x: hidden;
 }
+body.menu-open {
+  overflow: hidden;
+}
 
 .header__wrapper,
 main,
@@ -316,7 +319,13 @@ main,
   background-color: #4e8154;
   font-size: 1.375rem;
   border-radius: 999px;
-  border: none;
+  text-decoration: none;
+  color: white;
+}
+.hero__button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__button-wrapper {
   display: flex;
@@ -327,6 +336,18 @@ main,
 .hero__button-icon {
   width: 32px;
   height: 32px;
+}
+.hero__button.fixed {
+  position: fixed;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  z-index: 1000;
+  animation: fade-in 0.3s ease-in-out;
+}
+.hero__button.hidden {
+  display: none;
 }
 .hero__card {
   display: flex;
@@ -380,6 +401,16 @@ main,
   color: #5c5c5c;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .content {
   display: flex;
   margin-bottom: 85px;
@@ -416,9 +447,9 @@ main,
   list-style-type: circle;
 }
 .content__subheading {
-  scroll-margin-top: 150px;
   line-height: 36px;
   font-weight: bold;
+  scroll-margin-top: 180px;
 }
 .content__subtitle {
   text-transform: uppercase;
@@ -440,11 +471,11 @@ main,
   margin: 40px 0 40px 0;
 }
 .content__our-services {
-  scroll-margin-top: 150px;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 40px;
+  scroll-margin-top: 180px;
 }
 .content__makes-us {
   display: flex;
@@ -684,6 +715,7 @@ main,
   width: 100%;
   margin-bottom: 120px;
   box-sizing: border-box;
+  scroll-margin-top: 180px;
 }
 .contact__wrapper {
   display: flex;
@@ -782,7 +814,7 @@ main,
   flex-direction: column;
   color: white;
   box-sizing: border-box;
-  padding: 24px 55px 120px 55px;
+  padding: 24px 55px 140px 55px;
 }
 .footer__link {
   color: #5c5c5c;
@@ -1068,11 +1100,7 @@ main,
     display: flex;
   }
   .content {
-    scroll-margin-top: 0px;
     padding: 0 10px;
-  }
-  .content__subheading {
-    scroll-margin-top: 0px;
   }
   .why-choose__wrapper {
     margin-right: 8px;
@@ -1153,6 +1181,9 @@ main,
   }
   .content {
     display: none;
+  }
+  .content--article {
+    display: flex;
   }
   .hero {
     max-width: 100vw;

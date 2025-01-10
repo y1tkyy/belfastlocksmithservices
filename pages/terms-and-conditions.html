@@ -33,6 +33,40 @@
   <body>
     <header class="header">
       <div class="header__decorative-line"></div>
+      <div class="header__overlay">
+        <div class="header__menu">
+          <button class="header__menu-close">
+            <img src="../images/icons/burger_close.svg" alt="Close menu" />
+          </button>
+          <nav class="header__nav header__nav--menu">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="../index.html#top" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="../index.html#content-section" class="header__nav-link"
+                  >About</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="../index.html#our-services" class="header__nav-link"
+                  >Services</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="../index.html#our-products" class="header__nav-link"
+                  >Products</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="../index.html#contact-section" class="header__nav-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="header__wrapper">
         <a href="../index.html" class="header__logo-link">
           <img
@@ -47,17 +81,17 @@
               <a href="../index.html#top" class="header__nav-link">Home</a>
             </li>
             <li class="header__nav-item">
-              <a href="../index.html#about-section" class="header__nav-link"
+              <a href="../index.html#content-section" class="header__nav-link"
                 >About</a
               >
             </li>
             <li class="header__nav-item">
-              <a href="../index.html#services-section" class="header__nav-link"
+              <a href="../index.html#our-services" class="header__nav-link"
                 >Services</a
               >
             </li>
             <li class="header__nav-item">
-              <a href="../index.html#products-section" class="header__nav-link"
+              <a href="../index.html#our-products" class="header__nav-link"
                 >Products</a
               >
             </li>
@@ -68,7 +102,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header__contact">
+        <div class="header__contact hidden">
           <img
             src="../images/icons/telephone.svg"
             alt="Telephone icon"
@@ -76,10 +110,17 @@
           />
           <h2 class="header__contact-telephone">028 912 44 111</h2>
         </div>
+        <div class="header__burger">
+          <img
+            src="../images/icons/burger.svg"
+            alt="Burger menu"
+            class="header__burger-icon"
+          />
+        </div>
       </div>
     </header>
     <main class="main">
-      <section id="terms-and-conditions" class="content">
+      <section id="terms-and-conditions" class="content content--article">
         <div class="content__main">
           <h1 class="content__title">Terms and Conditions</h1>
           <article class="content__article">
@@ -223,5 +264,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>

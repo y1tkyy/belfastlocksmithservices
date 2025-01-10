@@ -744,6 +744,7 @@ main,
   box-sizing: border-box;
   padding: 24px 55px 140px 55px;
   &__text {
+    text-transform: uppercase;
   }
   &__link {
     color: $text-color;
@@ -1337,6 +1338,7 @@ main,
   }
   .footer {
     text-align: center;
+    padding: 24px 16px 140px 16px;
   }
   .footer__container {
     flex-direction: column;

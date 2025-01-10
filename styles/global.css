@@ -816,6 +816,9 @@ main,
   box-sizing: border-box;
   padding: 24px 55px 140px 55px;
 }
+.footer__text {
+  text-transform: uppercase;
+}
 .footer__link {
   color: #5c5c5c;
   margin-left: 20px;
@@ -1345,6 +1348,7 @@ main,
   }
   .footer {
     text-align: center;
+    padding: 24px 16px 140px 16px;
   }
   .footer__container {
     flex-direction: column;

@@ -809,7 +809,7 @@ main,
 
 .footer {
   width: 100%;
-  background-color: rgb(105, 164, 112);
+  background-color: #47754c;
   display: flex;
   flex-direction: column;
   color: white;

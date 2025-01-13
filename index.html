@@ -20,6 +20,8 @@
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
       />
     </noscript>
+    <link rel="preload" as="image" href="./images/hero.webp" />
+    <link rel="preload" as="image" href="./images/hero-mobile.webp" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -39,12 +41,22 @@
     />
     <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/global.min.css" />
     <style>
       body {
         font-family: "Roboto", sans-serif;
         background: #fff;
         margin: 0;
+      }
+      .hero__image {
+        width: 100%;
+        height: 285px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .hero__image--mobile {
+        height: 536px;
       }
     </style>
   </head>
@@ -125,16 +137,18 @@
       <section id="hero-section" class="hero">
         <h2 class="hidden">Hero</h2>
         <div class="hero__wrapper">
-          <img
-            src="./images/hero.webp"
-            alt="Professional locksmith service"
+          <div
             class="hero__image"
-          />
-          <img
-            src="./images/hero-mobile.webp"
-            alt="Locksmith service"
+            style="background-image: url('./images/hero.webp')"
+            role="img"
+            aria-label="Professional locksmith service"
+          ></div>
+          <div
             class="hero__image hero__image--mobile"
-          />
+            style="background-image: url('./images/hero-mobile.webp')"
+            role="img"
+            aria-label="Locksmith service"
+          ></div>
           <div class="hero__banner">
             <p class="hero__banner-text">
               Welcome to Belfast Locksmith Services Your Local Locksmith with
@@ -1296,7 +1310,7 @@
         </div>
         <div class="contact__wrapper">
           <form
-            action="https://formspree.io/f/mannvjql"
+            action="https://formspree.io/f/xannvbyj"
             method="POST"
             target="_blank"
             class="contact__form"

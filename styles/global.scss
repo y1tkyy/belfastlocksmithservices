@@ -181,6 +181,9 @@ main,
       font-size: 1.375rem;
       line-height: 1.625rem;
     }
+    &--mobile {
+      display: none;
+    }
   }
   &__button {
     max-width: 360px;
@@ -203,6 +206,7 @@ main,
     border-radius: 999px;
     text-decoration: none;
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     &-container {
       display: flex;
       flex-direction: column;
@@ -742,7 +746,7 @@ main,
   flex-direction: column;
   color: white;
   box-sizing: border-box;
-  padding: 24px 55px 140px 55px;
+  padding: 24px 55px 70px 55px;
   &__text {
     text-transform: uppercase;
   }
@@ -775,6 +779,14 @@ main,
     width: 100%;
     height: 8px;
     background-color: $primary-color;
+  }
+  &__company {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
   }
 }
 
@@ -1132,6 +1144,7 @@ main,
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 140px;
     &__wrapper {
       flex-direction: column;
     }
@@ -1300,7 +1313,7 @@ main,
   }
   .hero {
     &__banner {
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       width: 100%;
@@ -1308,6 +1321,9 @@ main,
       &-text {
         max-width: 275px;
         text-align: center;
+      }
+      &--mobile {
+        display: flex;
       }
     }
   }

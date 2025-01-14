@@ -89,51 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
   }
 
-  // Contact Form Submission
-  const contactForm = document.getElementById("contactForm");
-  const contactFormResponse = document.getElementById("contactFormResponse");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const formData = {
-        name: document.getElementById("contact-name").value,
-        email: document.getElementById("contact-email").value,
-        phone: document.getElementById("contact-phone").value,
-        subject: document.getElementById("contact-subject").value,
-        message: document.getElementById("contact-message").value,
-      };
-
-      try {
-        const response = await fetch("http://localhost:5000/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-
-        const result = await response.json();
-
-        if (result.success) {
-          contactFormResponse.textContent = "Email sent successfully!";
-          contactFormResponse.style.color = "#4e8154";
-          contactForm.reset();
-        } else {
-          contactFormResponse.textContent =
-            "Failed to send email. Please try again.";
-          contactFormResponse.style.color = "red";
-        }
-      } catch (error) {
-        console.error("Error during submission:", error);
-        contactFormResponse.textContent =
-          "An error occurred. Please try again later.";
-        contactFormResponse.style.color = "red";
-      }
-    });
-  }
-
   // This script dynamically sets the current year
   const yearElement = document.getElementById("current-year");
   if (yearElement) {

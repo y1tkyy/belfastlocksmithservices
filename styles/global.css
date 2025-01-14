@@ -766,6 +766,12 @@ main,
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
+.contact__form-response {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 .contact__info {
   max-width: 410px;
   width: 100%;

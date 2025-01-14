@@ -1309,7 +1309,7 @@
           <h2 class="contact__title-text">Contact Us</h2>
         </div>
         <div class="contact__wrapper">
-          <form id="contact-form" class="contact__form">
+          <form class="contact__form" id="contactForm">
             <div class="contact__form-field">
               <label for="contact-name" class="contact__form-label"
                 >Name *</label
@@ -1319,7 +1319,6 @@
                 id="contact-name"
                 name="name"
                 class="contact__form-input"
-                placeholder="Your Name"
                 required
               />
             </div>
@@ -1332,7 +1331,6 @@
                 id="contact-email"
                 name="email"
                 class="contact__form-input"
-                placeholder="Your Email"
                 required
               />
             </div>
@@ -1345,7 +1343,6 @@
                 id="contact-phone"
                 name="phone"
                 class="contact__form-input"
-                placeholder="Your Phone Number"
               />
             </div>
             <div class="contact__form-field">
@@ -1357,7 +1354,6 @@
                 id="contact-subject"
                 name="subject"
                 class="contact__form-input"
-                placeholder="Subject"
               />
             </div>
             <div class="contact__form-field">
@@ -1368,11 +1364,10 @@
                 id="contact-message"
                 name="message"
                 class="contact__form-textarea"
-                placeholder="Your Message"
-                rows="6"
                 required
               ></textarea>
             </div>
+            <div class="contact__form-response" id="contactFormResponse"></div>
             <div class="contact__form-actions">
               <button type="submit" class="contact__form-button">
                 Send Message

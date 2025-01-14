@@ -1,3 +1,4 @@
+// Menu
 document.addEventListener("DOMContentLoaded", () => {
   const burgerIcon = document.querySelector(".header__burger");
   const menu = document.querySelector(".header__menu");
@@ -86,6 +87,58 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+  }
+
+  // Contact form
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("contact-name").value;
+      const email = document.getElementById("contact-email").value;
+      const subject =
+        document.getElementById("contact-subject").value || "No Subject";
+      const message = document.getElementById("contact-message").value;
+
+      const sendGridAPIKey =
+        "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";
+
+      try {
+        const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${sendGridAPIKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            personalizations: [
+              { to: [{ email: "nikitadudukalo2@gmail.com" }] },
+            ],
+            from: { email: "projectbiz24@gmail.com" },
+            subject: subject,
+            content: [
+              {
+                type: "text/plain",
+                value: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+              },
+            ],
+          }),
+        });
+
+        if (response.ok) {
+          alert("Message sent successfully!");
+          contactForm.reset();
+        } else {
+          const error = await response.json();
+          console.error("Error sending message:", error);
+          alert("Failed to send message. Please try again later.");
+        }
+      } catch (error) {
+        console.error("Request failed:", error);
+        alert("An error occurred. Please try again later.");
+      }
+    });
   }
 });
 

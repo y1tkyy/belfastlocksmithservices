@@ -290,7 +290,7 @@ main,
   top: 0;
   left: 0;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   opacity: 0.9;
   padding: 16px 32px;
   max-width: 475px;
@@ -387,7 +387,7 @@ main,
   width: 100%;
   height: 160px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 16px;
 }
 .hero__card-subtitle {
@@ -498,7 +498,8 @@ main,
   height: auto;
   border-radius: 8px;
 }
-.content__sidebar-features, .content__sidebar-services {
+.content__sidebar-features,
+.content__sidebar-services {
   background-color: #fdfdfd;
 }
 .content__sidebar-services {
@@ -1231,7 +1232,7 @@ main,
   .hero__image--mobile {
     display: flex;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 536px;
   }
   .hero__card-subtitle {
@@ -1371,4 +1372,4 @@ main,
   .footer__container {
     flex-direction: column;
   }
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */

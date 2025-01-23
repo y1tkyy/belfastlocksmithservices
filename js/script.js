@@ -94,4 +94,21 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
+
+  const heroContainer = document.querySelector(".hero__container");
+  if (heroContainer) {
+    heroContainer.style.display = "";
+  }
+
+  // Set background images for hero__image and hero__image--mobile
+  const desktopHeroImage = document.querySelector(".hero__image");
+  const mobileHeroImage = document.querySelector(".hero__image--mobile");
+
+  if (desktopHeroImage) {
+    desktopHeroImage.style.backgroundImage = 'url("./images/hero.webp")';
+  }
+
+  if (mobileHeroImage) {
+    mobileHeroImage.style.backgroundImage = 'url("./images/hero-mobile.webp")';
+  }
 });

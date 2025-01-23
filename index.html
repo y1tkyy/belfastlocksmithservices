@@ -41,7 +41,7 @@
     />
     <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/global.min.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
     <style>
       body {
         font-family: "Roboto", sans-serif;
@@ -68,13 +68,18 @@
           <button class="header__menu-close">
             <img src="./images/icons/burger_close.svg" alt="Close menu" />
           </button>
+          <img
+            src="./images/logo/logo.webp"
+            alt="Menu logo"
+            class="header__nav-logo"
+          />
           <nav class="header__nav header__nav--menu">
             <ul class="header__nav-list">
               <li class="header__nav-item">
                 <a href="#top" class="header__nav-link">Home</a>
               </li>
               <li class="header__nav-item">
-                <a href="content-section" class="header__nav-link">About</a>
+                <a href="#content-section" class="header__nav-link">About</a>
               </li>
               <li class="header__nav-item">
                 <a href="#our-services" class="header__nav-link">Services</a>
@@ -95,6 +100,7 @@
             src="./images/logo/logo.webp"
             alt="Belfast Locksmith logo"
             class="header__logo-image"
+            loading="lazy"
           />
         </a>
         <nav class="header__nav">
@@ -122,7 +128,9 @@
             alt="Telephone icon"
             class="header__contact-icon"
           />
-          <h2 class="header__contact-telephone">028 912 44 111</h2>
+          <a href="tel:02895072211" class="header__contact-telephone"
+            >028 912 44 111 <span>Call Now</span></a
+          >
         </div>
         <div class="header__burger">
           <img
@@ -139,13 +147,11 @@
         <div class="hero__wrapper">
           <div
             class="hero__image"
-            style="background-image: url('./images/hero.webp')"
             role="img"
             aria-label="Professional locksmith service"
           ></div>
           <div
             class="hero__image hero__image--mobile"
-            style="background-image: url('./images/hero-mobile.webp')"
             role="img"
             aria-label="Locksmith service"
           ></div>
@@ -177,13 +183,14 @@
             </div>
           </a>
         </div>
-        <div class="hero__container">
+        <div class="hero__container" style="display: none">
           <div class="hero__card">
             <a href="./pages/emergency-locksmith.html" class="hero__card-link">
               <img
                 src="./images/emergency-locksmith.webp"
                 alt="Emergency 24/7 Locksmith"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -217,6 +224,7 @@
                 src="./images/lock-installation.webp"
                 alt="Lock Change/Repair/Installation"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -244,6 +252,7 @@
                 src="./images/upvc-locksmith.webp"
                 alt="Lock change, installation"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -271,6 +280,7 @@
                 src="./images/security-upgrade.webp"
                 alt="Tailored solutions to enhance your property's security"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -296,7 +306,7 @@
       </section>
       <section class="mobile">
         <div class="mobile__main">
-          <h2 class="mobile__title" id="#content-section-mobile">
+          <h2 class="mobile__title" id="content-section-mobile">
             Local. Trusted. Affordable.
           </h2>
           <p class="mobile__subtitle">
@@ -364,6 +374,7 @@
               class="mobile__image"
               src="./images/locksmith_guy.webp"
               alt="Locksmith guy"
+              loading="lazy"
             />
           </div>
           <div class="mobile-why-choose__wrapper">
@@ -575,6 +586,7 @@
               src="./images/sidebar_image.webp"
               alt="Locksmith guy fixing lock"
               class="mobile__sidebar-image"
+              loading="lazy"
             />
           </div>
           <h2 class="mobile__title" id="our-products-mobile">Our Products</h2>
@@ -714,6 +726,7 @@
                 src="./images/emergency-locksmith.webp"
                 alt="Emergency 24/7 Locksmith"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -741,6 +754,7 @@
                 src="./images/lock-installation.webp"
                 alt="Lock Change/Repair/Installation"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -762,6 +776,7 @@
                 src="./images/upvc-locksmith.webp"
                 alt="Lock change, installation"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -783,6 +798,7 @@
                 src="./images/security-upgrade.webp"
                 alt="Tailored solutions to enhance your property's security"
                 class="hero__card-image"
+                loading="lazy"
               />
             </a>
             <div class="hero__card-container">
@@ -899,6 +915,7 @@
                   class="why-choose__image"
                   src="./images/locksmith_guy.webp"
                   alt="Locksmith guy"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1127,7 +1144,9 @@
               now for fast, affordable service you can trust.
             </p>
             <p class="content__text">
-              <a href="tel:028 912 44 111">028 912 44 111</a>
+              <a href="tel:028 912 44 111" class="content__link"
+                >028 912 44 111</a
+              >
             </p>
             <p class="content__text">
               At Belfast Locksmith Services, we&apos;re more than a
@@ -1193,6 +1212,9 @@
               </li>
             </ul>
           </div>
+          <a href="tel:02895072211" class="content__contact-telephone"
+            >028 912 44 111 <span>Call Now</span></a
+          >
           <div class="content__sidebar-services">
             <h2
               class="content__sidebar-heading content__sidebar-heading--reverse"
@@ -1237,11 +1259,16 @@
             src="./images/sidebar_image.webp"
             alt="Locksmith guy fixing lock"
             class="content__sidebar-image"
+            loading="lazy"
           />
+          <a href="tel:02895072211" class="content__contact-telephone"
+            >028 912 44 111 <span>Call Now</span></a
+          >
           <img
             src="./images/sidebar_banner.webp"
             alt="Payment methods"
             class="content__sidebar-image"
+            loading="lazy"
           />
         </aside>
       </section>
@@ -1391,7 +1418,9 @@
               the form or contact us directly using the details below:
             </p>
             <p class="contact__info-label">Tel:</p>
-            <h3 class="contact__info-phone">028 912 44 111</h3>
+            <a href="tel:02895072211" class="contact__info-phone"
+              >028 912 44 111</a
+            >
             <p class="contact__info-label">E-mail:</p>
             <a
               href="mailto:belfastlocksmithservices@gmail.com"

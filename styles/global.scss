@@ -36,6 +36,13 @@ main,
   display: none;
 }
 
+.button {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .header {
   width: 100%;
   position: sticky;
@@ -52,6 +59,10 @@ main,
   &__contact-telephone {
     font-size: 1.75rem;
     color: $primary-dark;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__logo-image {
     height: 72px;
@@ -77,6 +88,11 @@ main,
   &__nav-list {
     display: flex;
     gap: 18px;
+  }
+  &__nav-logo {
+    position: absolute;
+    top: 200px;
+    width: 200px;
   }
   &__wrapper {
     display: flex;
@@ -307,7 +323,7 @@ main,
   display: flex;
   margin-bottom: 85px;
   scroll-margin-top: 180px;
-  a {
+  &__link {
     color: $primary-light;
     text-decoration: none;
     overflow-wrap: break-word;
@@ -385,6 +401,16 @@ main,
     scroll-margin-top: 180px;
   }
 
+  &__contact-telephone {
+    font-size: 1.75rem;
+    color: $primary-dark;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0 16px 0;
+  }
+
   &__makes-us {
     display: flex;
     flex-direction: column;
@@ -396,7 +422,6 @@ main,
     flex: 1;
 
     &-image {
-      margin-top: 30px;
       width: 100%;
       height: auto;
       border-radius: 8px;
@@ -409,6 +434,7 @@ main,
 
     &-services {
       position: relative;
+      margin-bottom: 30px;
       &::after {
         content: "";
         display: block;
@@ -712,6 +738,7 @@ main,
       font-size: 1.75rem;
       font-weight: bold;
       color: $primary-dark;
+      text-decoration: none;
     }
     &-text {
       margin-top: 38px;
@@ -981,6 +1008,7 @@ main,
     font-weight: bold;
     font-size: 1.625rem;
     margin-bottom: 8px;
+    scroll-margin-top: 110px;
   }
   &-makes-us {
     &__description {
@@ -1112,7 +1140,7 @@ main,
         gap: 42px;
       }
       &-link {
-        font-size: 1rem;
+        font-size: 1.375rem;
       }
     }
     &__burger {

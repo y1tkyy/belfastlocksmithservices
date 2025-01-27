@@ -10,6 +10,10 @@
       name="description"
       content="Upgrade your property's security with expert locksmith services in Belfast. We provide advanced lock solutions, door and window reinforcements, and tailored security enhancements for homes and businesses."
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -42,7 +46,7 @@
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
       />
     </noscript>
-    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/global.min.css" />
     <style>
       body {
         font-family: "Roboto", sans-serif;
@@ -59,6 +63,11 @@
           <button class="header__menu-close">
             <img src="../images/icons/burger_close.svg" alt="Close menu" />
           </button>
+          <img
+            src="../images/logo/logo.webp"
+            alt="Menu logo"
+            class="header__nav-logo"
+          />
           <nav class="header__nav header__nav--menu">
             <ul class="header__nav-list">
               <li class="header__nav-item">
@@ -94,6 +103,7 @@
             src="../images/logo/logo.webp"
             alt="Belfast Locksmith logo"
             class="header__logo-image"
+            loading="lazy"
           />
         </a>
         <nav class="header__nav">
@@ -129,7 +139,9 @@
             alt="Telephone icon"
             class="header__contact-icon"
           />
-          <h2 class="header__contact-telephone">028 912 44 111</h2>
+          <a href="tel:02895072211" class="header__contact-telephone">
+            028 912 44 111 <span>Call Now</span>
+          </a>
         </div>
         <div class="header__burger">
           <img
@@ -141,6 +153,21 @@
       </div>
     </header>
     <main class="main">
+      <div class="button">
+        <a href="tel:02891244111" class="hero__button">
+          <div class="hero__button-container">
+            <div class="hero__button-wrapper">
+              <img
+                class="hero__button-icon"
+                src="../images/icons/hero_button.svg"
+                alt="Call Now Button"
+              />
+              <p class="hero__button-text">Call Now</p>
+            </div>
+            <p class="hero__button-telephone">028 912 44 111</p>
+          </div>
+        </a>
+      </div>
       <section class="article">
         <h1 class="article__title">Security Upgrade</h1>
         <div class="article__container">
@@ -183,6 +210,13 @@
             >Privacy</a
           >
         </div>
+      </div>
+      <div class="footer__company">
+        <p>BELFAST LOCKSMITH SERVICES LTD</p>
+        <p>Company number: NI725318</p>
+        <p>Company address:</p>
+        <p>118 Ballantine Gardens</p>
+        <p>BT27 5FJ</p>
       </div>
     </footer>
     <script src="../js/script.js"></script>
